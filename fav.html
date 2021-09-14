@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/fav.css">
     <title>Document</title>
 </head>
-<header>  <div> <nav> <ul id="navegacion"> <a href="./index.html"> Inicio </a> <a href="./fav.html">Favoritos</a> <a href=""> Peliculas</a>
-    <a href="">Series</a> <a href=""> Buscar</a> </ul> </nav>
-</div></header>
+<header>
+    <div class="opciones">  
+        <h3><a href="index.html">Home</a> </h3>
+        <h3><a href="./generos.html">Peliculas</a> </h3>
+        <h3><a href="./series.html">Series</a> </h3>
+        <h3><a href="./fav.html">Favoritos</a> </h3>
+        <form action="resultados.html" method="GET"><input type="text" name="search"
+            placeholder="Buscar..."> <button type="submit"><i class="fas fa-search"></i></button>
+</h3>
+
+    </div>
+</header>
 <body>
-    <h3>Favoritos</h3>
+    <h3 class="titu">Favoritos</h3>
 <article class="fav"> 
-<img src="./img/fav 1.png" alt="100px">
-<img src="./img/fav 2.png" alt="100px">
-<img src="./img/fav3.png" alt="100px">
-<img src="./img/fav 4.png" alt="100px">
-<img src="./img/fav 5.png" alt="100px">
+<img class="movi" src="./img/fav 1.png" alt="100px">
+<img class="movi" src="./img/fav 2.png" alt="100px">
+<img class="movi" src="./img/fav3.png" alt="100px">
+<img class="movi" src="./img/fav 4.png" alt="100px">
+<img class="movi" src="./img/fav 5.png" alt="100px">
+<img class="movi" src="./img/accion 5.png" alt="100px">
 </article>
+
+<button class="boton" type="button"> <a href="./index.html"> Agregar a Favoritos</a>
+
+</button>
 </body>
 </html>
