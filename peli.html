@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>MovieMania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<main>
-<header>
-    <div>
-        <nav> <ul id="navegacion"> <a href="./index.html" target="_blank"> Inicio </a> <a href="./fav.html" target="_blank">Favoritos</a> <a href="./peli.html" target="_blank"> Peliculas</a>
-            <a href="" target="_blank">Series</a> <a href="" target="_blank" > Buscar</a> </ul> </nav>
-    </div>
+<body>
+
+    <header class="padre-contenedor">
+        <ul class="opciones">  <!--UL, lista ordenada-->
+    
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="peli.html">Peliculas</a> </li>
+            <li><a href="series.html">Series</a> </li>
+            <li><a href="detalle.html">Más</a> </li>
+            <form action="resultados.html" method="GET"><input type="text" name="search"
+                placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
+    
+        </ul>
+    </header>
 
 </header>
+<main class="padre-contenedor">
+    <section>
 <h4>Acción</h4>
 <article class="accion"> 
 <img src="./img/accion 3.png" alt="100px">
@@ -22,12 +35,26 @@
 <img src="./img/accion 6.png" alt="100px">
 <img src="./img/accion 5.png" alt="100px">
 <img src="./img/accion 7.png" alt="">
+</section>
 
+<section>
 <h4>Infantiles</h4>
-<article class="familia"> 
-    <img src="./img/en familia 2.png" alt="100px">
-    <img src="./img/en familia 3.png" alt="100px">
-    <img src="./img/familia 4.png" alt="100px">
-    <img src="./img/familia 5.png" alt="100px">
-    <img src="./img/familia 6.png" alt="100px">
-</article>
+    <article class="familia"> 
+        <img src="./img/en familia 2.png" alt="100px">
+        <img src="./img/en familia 3.png" alt="100px">
+        <img src="./img/familia 4.png" alt="100px">
+        <img src="./img/familia 5.png" alt="100px">
+        <img src="./img/familia 6.png" alt="100px">
+        </article>
+</section>
+
+</main>
+
+<footer class="padre-contenedor"> 
+    <p id="footer">Francisca Cetrá, Franco Ferrero y Benjamín Galeazzi</p>    
+    
+    </footer>
+
+</body>
+
+</html>

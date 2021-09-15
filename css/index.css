@@ -1,46 +1,128 @@
 
-* {
+body {
+    
     box-sizing: border-box;
     margin: 0%;
-    padding: 0%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0%;    
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
+    color: white;
 }
-html{
-    background-color: blueviolet;
+
+.padre-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
 }
-.padre-contenedor {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
+
+
 #navegacion{
     text-align: center;
     text-decoration: none;
 }
 
 .logo {
+    display: flex;
     margin: 8px;
     font-size: 28px;
-align-content: center;
+    justify-content: center;
+    max-width: 100%;
 }
+h1{
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
   
-#titulo{ text-align: center;
 }
+
+#logo{
+    border-radius: 180px;
+}
+
+header.padre-contenedor{
+    background-color: rgb(48, 48, 48);
+}
+
+ul.opciones{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 85px;
+    list-style-type: none;
+
+ 
+
+}
+.opciones li, form{
+    display: inline-block;
+    justify-content: space-around;
+
+}
+#header{
+    width: 100%;
+    flex-direction: row;
+
+}
+.opciones a{
+    text-decoration: none;
+    color: white;
+}
+
 .series{
     display: flex;
 } 
+
 #bb{
+    display: inline-block;
     align-items: center;
-}
-.opciones{ 
-    background-color:burlywood;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    height: 85px;
- justify-content: space-around;
+    margin: 20px;
 }
 
+
+.peliculas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.peliculas img{
+    margin: 5px;
+    width: 200px;
+}
+
+.descripcion{
+    max-width: 40%;
+    display: inline-block;
+}
+#breakingbad{
+    display: flex;
+    flex-direction: row;
+}
+.boton-ver{
+    text-decoration: none;
+    color: rgb(138, 16, 16);
+    background-color: black;
+    padding: 7px;
+    
+}
+.boton-buscar{
+    padding: auto;
+    color: rgb(138, 16, 16);
+    background-color: seashell;
+}
+footer{
+    background-color: rgb(138, 16, 16);
+    color: white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    justify-content: center;
+
+}
+#footer{
+    display: inline-block;
+
+}
 
 /*@media(min-width: 768px) 

@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<header>  <div> <nav> <ul id="navegacion"> <a href="./index.html"> Inicio </a> <a href="./fav.html">Favoritos</a> <a href=""> Peliculas</a>
-    <a href="">Series</a> <a href=""> Buscar</a> </ul> </nav>
-</div></header>
 <body>
+<header class="padre-contenedor">
+    <ul class="opciones">  <!--UL, lista ordenada-->
+
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="peli.html">Peliculas</a> </li>
+        <li><a href="series.html">Series</a> </li>
+        <li><a href="detalle.html">Más</a> </li>
+        <form action="resultados.html" method="GET"><input type="text" name="search"
+            placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
+</li>
+
+    </ul>
+</header>
+
+<main class="padre-contenedor">
+
     <h3>Favoritos</h3>
 <article class="fav"> 
 <img src="./img/fav 1.png" alt="100px">
@@ -19,5 +35,12 @@
 <img src="./img/fav 4.png" alt="100px">
 <img src="./img/fav 5.png" alt="100px">
 </article>
+</main>
+
+<footer class="padre-contenedor"> 
+    <p id="footer">Francisca Cetrá, Franco Ferrero y Benjamín Galeazzi</p>    
+ 
+    </footer>
+
 </body>
 </html>
