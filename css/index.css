@@ -16,7 +16,10 @@ body {
     align-content: space-between;
 }
 
-
+.gen{
+    color: white;
+    text-decoration: none
+}
 #navegacion{
     text-align: center;
     text-decoration: none;
