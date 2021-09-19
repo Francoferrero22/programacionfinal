@@ -123,11 +123,8 @@ footer{
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     justify-content: center;
-
+    margin: 0 auto;
 }
-#footer{
-    display: inline-block;}
-
 .fav{
     display: flex;
     justify-content: space-between;
@@ -138,15 +135,12 @@ footer{
     justify-content: space-between;
     margin-bottom: 50px;
 }
-.footer{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 a{
     color: black;
     text-decoration: none;
 }
-
-/*@media(min-width: 768px) 
+@media (min-width:420px){
+}
+@media (max-width:1024px){
+    
+}
