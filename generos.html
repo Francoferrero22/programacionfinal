@@ -4,57 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/generos.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>MovieMania</title>
 </head>
-<main>
-    <header>
-        <div class="opciones">  <!--UL, lista ordenada-->
+    <body class="contenedor">
+    <header >
+        <ul class="opciones">  <!--UL, lista ordenada-->
     
-            <h3><a href="index.html">Home</a> </h3>
-            <h3><a href="./generos.html">Peliculas</a> </h3>
-            <h3><a href="./series.html">Series</a> </h3>
-            <h3><a href="./fav.html">Favoritos</a> </h3>
-            <form action="resultados.html" method="GET"><input type="text" name="search"
-                placeholder="Buscar..."> <button type="submit"><i class="fas fa-search"></i></button>
-    </h3>
-    
-    </div>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="peli.html">Peliculas</a> </li>
+            <li><a href="series.html">Series</a> </li>
+            <li><a href="./fav.html">Favoritos</a> </li>
+            <li><a href="./generos.html">Generos</a></li>
+            <form action="./index.html" method="GET"><input type="text" name="search"
+                placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
+                </form>
+        </ul>
     </header>
-    <body>
-<h4>Acción</h4>
-<article class="accion"> 
-<img class="foto"  src="./img/accion 3.png" alt="100px">
-<img class="foto"  src="./img/accion 4.png" alt="100px">
-<img class="foto" src="./img/accion 6.png" alt="100px">
-<img class="foto" src="./img/accion 5.png" alt="100px">
-<img class="foto" src="./img/accion 7.png" alt="">
-</article>
+    <main>
+        <section>
+            <article>
+            <h1>Géneros</h1>
 
-<h4>Infantiles</h4>
-<article class="familia"> 
-    <img class="foto" src="./img/en familia 2.png" alt="100px">
-    <img class="foto" src="./img/en familia 3.png" alt="100px">
-    <img class="foto" src="./img/familia 4.png" alt="100px">
-    <img class="foto" src="./img/familia 5.png" alt="100px">
-    <img class="foto" src="./img/familia 6.png" alt="100px">
-</article>
-<h4>Peliculas Destacadas</h4>
-<article class="accion"> 
-<img class="foto" src="./img/accion 3.png" alt="100px">
-<img class="foto" src="./img/accion 4.png" alt="100px">
-<img class="foto" src="./img/accion 7.png" alt="100px">
-<img class="foto" src="./img/en familia 3.png" alt="100px">
-<img class="foto" src="./img/familia 4.png" alt="100px">
-
-</article>
-</body>
-<footer> 
-    <nav> <ul class="footer"> 
-    <li>Franco Ferrero</li>
-    <li>Francisca Cetra Oris</li>
-    <li>Benjamin Galeazi</li>
-     </nav></ul>
-</footer>
+<ul id="generos">
+    <li><a href="./generos.html">Acción</a></li>
+    <li><a href="./generos.html">Infantiles</a></li>
+    <li><a href="./generos.html">Comedia</a></li>
+</ul>
+            </article>
+        </section>
 </main>
+
+<footer> 
+    <p id="footer">Francisca Cetrá, Franco Ferrero y Benjamín Galeazzi</p>    
+    
+    </footer>
+    
+</body>
 </html>

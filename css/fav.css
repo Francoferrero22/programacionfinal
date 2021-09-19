@@ -4,10 +4,10 @@
 	flex-direction: row;
 }
 html{
-    background-color: rgb(50, 0, 73);
+    background-color: black;
 }
 .opciones{ 
-        background-color:rgb(210, 133, 255);
+        background-color:black);
         display:flex;
         flex-direction: row;
         align-items: center;
@@ -34,4 +34,16 @@ a{
 }
 .titu{
     color: blanchedalmond;
+}
+
+footer{
+    background-color: rgb(138, 16, 16);
+    color: white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    margin-top: auto;
+    
+}
+footer p{
+    text-align: center;
 }
