@@ -1,21 +1,27 @@
 
 body {
-    
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;    
     font-family: 'Work Sans', sans-serif;
     background-color: black;
     color: white;
+    
 }
-
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
 .padre-contenedor{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
-}
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 .gen{
     color: white;
     text-decoration: none
@@ -37,10 +43,6 @@ h1{
     font-family: 'Work Sans', sans-serif;
     text-align: center;
   
-}
-
-#logo{
-    border-radius: 180px;
 }
 
 header.padre-contenedor{
@@ -69,6 +71,9 @@ ul.opciones{
     width: 100%;
     flex-direction: row;
 
+}
+#header button{
+    display: none;
 }
 .opciones a{
     text-decoration: none;
@@ -138,6 +143,24 @@ footer{
 a{
     color: black;
     text-decoration: none;
+}
+#generos{
+    list-style-type: none;
+
+}
+#generos li a{
+    text-decoration: none;
+    color: white;
+}
+
+#header ul{
+    display: none;
+}
+#header button{
+    display: flex;
+}
+footer p{
+    text-align: center;
 }
 @media (min-width:420px){
 }

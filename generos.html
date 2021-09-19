@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>MovieMania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<main>
+<body>
 
     <header class="padre-contenedor">
         <ul class="opciones">  <!--UL, lista ordenada-->
@@ -19,38 +22,25 @@
             <li><a href="./generos.html">Generos</a></li>
             <form action="resultados.html" method="GET"><input type="text" name="search"
                 placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
+    </li>
     
         </ul>
     </header>
-    <body>
-        <a class="gen" href="./detalleg.html"><h2>Generos</h2></a>
-<h4>Acción</h4>
-<article class="peliculas"> 
-<img class="foto"  src="./img/accion 3.png" alt="100px">
-<img class="foto"  src="./img/accion 4.png" alt="100px">
-<img class="foto" src="./img/accion 6.png" alt="100px">
-<img class="foto" src="./img/accion 5.png" alt="100px">
-<img class="foto" src="./img/accion 7.png" alt="">
-</article>
+    <main>
+        <section>
+            <article>
+            <h1>Géneros</h1>
 
-<h4>Infantiles</h4>
-<article class="peliculas"> 
-    <img class="foto" src="./img/en familia 2.png" alt="100px">
-    <img class="foto" src="./img/en familia 3.png" alt="100px">
-    <img class="foto" src="./img/familia 4.png" alt="100px">
-    <img class="foto" src="./img/familia 5.png" alt="100px">
-    <img class="foto" src="./img/familia 6.png" alt="100px">
-</article>
-<h4>Peliculas Destacadas</h4>
-<article class="peliculas"> 
-<img class="foto" src="./img/accion 3.png" alt="100px">
-<img class="foto" src="./img/accion 4.png" alt="100px">
-<img class="foto" src="./img/accion 7.png" alt="100px">
-<img class="foto" src="./img/en familia 3.png" alt="100px">
-<img class="foto" src="./img/familia 4.png" alt="100px">
-
-</article>
+<ul id="generos">
+    <li><a href="./detalleg.html">Acción</a></li>
+    <li><a href="./detalleg.html">Infantiles</a></li>
+    <li><a href="./detalleg.html">Comedia</a></li>
+    <li><a href="./detalleg.html">Terror</a></li>
+</ul>
+            </article>
+        </section>
 </main>
+
 <footer class="padre-contenedor"> 
     <p id="footer">Francisca Cetrá y Franco Ferrero</p>    
 </body>
