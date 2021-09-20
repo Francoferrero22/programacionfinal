@@ -4,44 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    
+    <title>Movie Mania</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+
+<body class="contenedor">
+
 <header class="padre-contenedor">
     <ul class="opciones">  <!--UL, lista ordenada-->
 
         <li><a href="index.html">Home</a> </li>
         <li><a href="peli.html">Peliculas</a> </li>
         <li><a href="series.html">Series</a> </li>
-        <li><a href="./fav.html">Favoritos</a> </li>
-        <li><a href="./generos.html">Generos</a></li>
-        <form action="resultados.html" method="GET"><input type="text" name="search"
-            placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
-</li>
+        <li><a href="fav.html">Favoritos</a> </li>
+        <li><a href="generos.html">Generos</a></li>
+        <form action="./resultado.html" method="GET"><input type="text" name="search" placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
 
     </ul>
 </header>
     
 <main class="padre-contenedor">
-    <section id="breakingbad">
+
+    <section class="flex">
         <article>
             <img id="bb" src="./img/breking bad.jpg" width="200cm"> </article>
             <article class="descripcion">
         
      <h1> Breaking Bad</h1>
      <p>Breaking Bad es una serie de televisión dramática estadounidense creada y producida por Vince Gilligan. Narra la historia de Walter White (Bryan Cranston), un profesor de química con problemas económicos a quien le diagnostican un cáncer de pulmón inoperable. Para pagar su tratamiento y asegurar el futuro económico de su familia comienza a cocinar y vender metanfetamina,4​ junto con Jesse Pinkman (Aaron Paul), un antiguo alumno suyo. La serie, ambientada y producida en Albuquerque, Nuevo México, se caracteriza por sus escenarios desérticos y por la tendencia en la historia de poner a sus personajes en situaciones que aparentemente no tienen salida, lo que llevó a que su creador la describa como un wéstern contemporáneo.5​</p>
-     <button class="boton" type="button"><a href="./series.html"> Ver</a></button>
-     <button class="boton" type="button"> <a href="./fav.html"> Agregar a Favoritos</a></button>
+     <button class="boton" type="button">Ver</button>
+     <button class="boton" type="button">Agregar a Favoritos</button>
         </article>
     </section>
+
 </main>
 
-<footer class="padre-contenedor"> 
-    <p id="footer"> Francisca Cetrá y Franco Ferrero</p>    
+<footer> 
+    <p> Francisca Cetrá y Franco Ferrero</p>    
 </footer>
+
 </body>
 </html>

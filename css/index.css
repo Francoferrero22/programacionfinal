@@ -82,7 +82,7 @@ ul.opciones{
 
 .series{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
 } 
 
@@ -91,7 +91,6 @@ ul.opciones{
     align-items: center;
     margin: 20px;
 }
-
 
 .peliculas{
     display: flex;
@@ -106,11 +105,12 @@ ul.opciones{
     max-width: 40%;
     display: inline-block;
 }
-#breakingbad{
+.flex{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
-.boton-ver{
+.boton{
     text-decoration: none;
     color: rgb(138, 16, 16);
     background-color: black;
@@ -128,7 +128,8 @@ footer{
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     justify-content: center;
-    margin: 0 auto;
+    padding: 3px;
+    margin-top: auto;
 }
 .fav{
     display: flex;
@@ -161,6 +162,9 @@ a{
 }
 footer p{
     text-align: center;
+}
+#not-found{
+    color: white;
 }
 @media (min-width:420px){
 }

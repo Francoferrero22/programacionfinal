@@ -12,7 +12,7 @@
  <link rel="stylesheet" href="./css/index.css"> 
 
 </head>
-<body>
+<body class="contenedor">
 <header class="padre-contenedor">
     <ul class="opciones">  <!--UL, lista ordenada-->
 
@@ -21,15 +21,15 @@
         <li><a href="series.html">Series</a> </li>
         <li><a href="./fav.html">Favoritos</a> </li>
         <li><a href="./generos.html">Generos</a></li>
-        <form action="resultados.html" method="GET"><input type="text" name="search"
+        <form action="resultado.html" method="GET"><input type="text" name="search"
             placeholder="Buscar..."> <button type="submit" class="boton-buscar">Buscar</button>
  </ul>
 </header>
 
 <main class="padre-contenedor">
 
-<h3>Favoritos</h3>
-<article class="fav"> 
+<h2>Favoritos</h2>
+<article class="flex"> 
 <img class="movi" src="./img/fav-suits.jpeg" alt="100px">
 <img class="movi" src="./img/fav-django.jpeg" alt="100px">
 <img class="movi" src="./img/fav-joker.jpeg" alt="100px">
@@ -37,12 +37,12 @@
 <img class="movi" src="./img/criminal-fav.jpeg" alt="100px">
 <img class="movi" src="./img/saul-fav.png" alt="100px">
 </article>
-<button class="boton" type="button"> <a href="./index.html"> Agregar a Favoritos</a>
+<button class="boton" type="button"> <a href="./index.html">Agregar a Favoritos</a>
 </main>
 
 
-<footer class="padre-contenedor"> 
-    <p id="footer">Francisca Cetrá y Franco Ferrero</p>    
+<footer> 
+    <p>Francisca Cetrá y Franco Ferrero</p>    
     </footer>
 
 </body>
