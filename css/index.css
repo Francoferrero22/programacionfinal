@@ -131,7 +131,7 @@ a .movi{
     width: max-content;
 }
 .boton a{
-    color: white;
+    color: rgb(128, 10, 10);
 }
 
 .boton-buscar{
@@ -170,7 +170,9 @@ a{
     text-decoration: none;
     color: white;
 }
-
+h4{
+    color: white;
+}
 
 #header ul{
     display: none;
