@@ -198,25 +198,42 @@ section{
 
 @media (max-width:425px){ /* celular */
 header.padre-contenedor{
-    background-color: rgb(48, 48, 48);
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.peliculas{
+
+.logo img{
+    width: 150px;
+}
+.opciones{
+    padding: 0%;
+    flex-direction: row;
+
+}
+.opciones li{
+    
+}
+.opciones form{
+    padding: 3%;
+}
+.seccion{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 100%;
+}
+.peliculas{
+    flex-wrap: wrap;
 }
 .peliculas a{
-    width: fit-content;
     display: inline-block;
+    max-width: 30%;
     
 }
 .peliculas img{
-    width: 30%;
+    width: 100px;
     justify-content: space-between;
 }
 }
-@media (max-width: 1024px){ /*tablet */
 
 
-}
