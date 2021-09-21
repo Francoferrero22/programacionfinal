@@ -30,14 +30,9 @@ a{
     color: blanchedalmond;
 }
 
-footer{
-    background-color: rgb(138, 16, 16);
-    color: white;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
-    margin-top: auto;
+.favoritos{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
     
-}
-footer p{
-    text-align: center;
 }
