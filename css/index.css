@@ -74,14 +74,6 @@ ul.opciones{
     background-color: black;
 
 }
-
-.series{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-} 
-
-
 .peliculas{
     display: flex;
     flex-wrap: wrap;
@@ -89,26 +81,6 @@ ul.opciones{
 .peliculas img{
     margin: 5px;
     width: 200px;
-}
-
-.descripcion{
-    max-width: 40%;
-    display: inline-block;
-}
-
-a .movi{
-    margin-top: 3%;
-    margin-right: 2%;
-}
-.fav-pelis{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.fav-pelis img{
-    width: 20%;
-    margin: 10px 5px;
-
 }
 .opciones i{
     display: none;
@@ -144,6 +116,25 @@ button.lupa{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.descripcion{
+    max-width: 40%;
+    display: inline-block;
+}
+
+a .movi{
+    margin-top: 3%;
+    margin-right: 2%;
+}
+.fav-pelis{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.fav-pelis img{
+    width: 20%;
+    margin: 10px 5px;
+
 }
 .accion{
     display: flex;
