@@ -31,7 +31,6 @@ footer{
     color: white;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
-    justify-content: center;
     padding: 3px;
     margin-top: auto;
 }
@@ -71,14 +70,7 @@ ul.opciones{
     background-color: black;
 
 }
-.peliculas{
-    display: flex;
-    flex-wrap: wrap;
-}
-.peliculas img{
-    margin: 5px;
-    width: 200px;
-}
+
 .opciones i{
     display: none;
 }
@@ -128,6 +120,9 @@ a .movi{
     height: 160px;
     
 }
+.favoritos{
+    padding-left: 10px;
+}
 .accion{
     display: flex;
     justify-content: space-between;
@@ -141,6 +136,31 @@ a .movi{
     margin: 20px;
     padding: 10px;
 }
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalle article{
+    margin: 15px;
+    width: 16%;
+}
+.detalle img{
+    width: 100%;
+}
+.detalle h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.detalle a{
+    display: inline-block;
+}
+.detalle h2{
+    width: 100%;
+}
+.generos{
+    margin: 15px;
+}
+
 #generos{
     list-style-type: none;
 
@@ -168,7 +188,9 @@ a .movi{
 #fav h4{
     text-align: center;
 }
-
+#especif{
+    list-style-type: none;
+}
 
 /*------- NO TOCAR --------*/
 
@@ -218,15 +240,15 @@ button.lupa{
 .fas{
     width: 25px;
 }
-.peliculas{
+.detalle{
     flex-wrap: wrap;
 }
-.peliculas a{
+.detalle a{
     display: inline-block;
     max-width: 30%;
     
 }
-.peliculas img{
+.detalle img{
     width: 100px;
     justify-content: space-between;
 }
