@@ -157,9 +157,6 @@ a .movi{
 .detalle h2{
     width: 100%;
 }
-.generos{
-    margin: 15px;
-}
 
 #generos{
     list-style-type: none;
@@ -240,8 +237,7 @@ button.lupa{
 .fas{
     width: 25px;
 }
-.detalle{
-    flex-wrap: wrap;
+
 }
 .detalle a{
     display: inline-block;
@@ -252,7 +248,22 @@ button.lupa{
     width: 100px;
     justify-content: space-between;
 }
-
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
 }
+.detalle article{
+    margin: 15px;
+    width: 16%;
+}
+.detalle img{
+    width: 100%;
+}
+.detalle h2{
+    width: 100%;
+.generos{
+    margin: 15px;
+}
+
 
 
