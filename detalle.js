@@ -8,29 +8,27 @@ window.onload = function() {
       return response.json();
     })
     .then(function(data){
-      console.log(data); 
-      for (let i=0; i<=4; i++){
-        console.log(data.results[i]);
+      console.log(data);
       document.querySelector("#detallepeli").innerHTML +=`
       <article> 
-      <img src:"https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].name}"></img>
-    <h3>${data.results[i].name} </h3>
+      <img src="https://image.tmdb.org/t/p/w342${data.poster_path}" alt="${data.name}"><g>
+    <h3>${data.name} </h3>
       <ul>
-          <li>${data.results[i].vote_average} </li>
-          <li>${data.results[i].first_air_date} </li>
-          <li> ${data.results[i].episode_run_time} </li>
+          <li>${data.vote_average} </li>
+          <li>${data.first_air_date} </li>
+          <li> ${data.episode_run_time} </li>
           <li>
               <ul></ul>
          </li>
       </ul>      
      </article> `
-    }
     })
   
     .catch(function(e){
       console.log(e)
       alert("Algo salio mal")
     })
+
   
   
   

@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    margin: 0%;
+    padding: 0%;    
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
+    color: white;
+    
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.padre-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: rgb(48, 48, 48);
+
+}
+footer{
+    background-color: rgb(138, 16, 16);
+    color: white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    padding: 3px;
+    margin-top: auto;
+}
+footer p{
+    text-align: center;
+}
+h2{
+    margin: 35px;
+}
+h4{
+    color: white;
+}
+
+ul.opciones{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 85px;
+    list-style-type: none;
+   margin: 0;
+   padding: 20px;
+ 
+
+}
+.opciones a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: black;
+
+}
+
+.opciones i{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+.fa-home{
+    display: none;
+}
+button.lupa{
+    display: none;
+}
+
+.boton a{
+    color: black;
+    text-decoration: none;
+}
+
+.boton-buscar{
+    padding: auto;
+    color: rgb(138, 16, 16);
+    background-color: seashell;
+}
+
+.fav{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.descripcion{
+    max-width: 40%;
+    display: inline-block;
+}
+
+a .movi{
+    margin-top: 3%;
+    margin-right: 2%;
+}
+.fav-pelis{
+    display: inline-block;
+    max-width: 20%;
+    margin: 10px 5px;
+
+}
+.fav-pelis img{
+    width: 100%;
+    height: 160px;
+    
+}
+.favoritos{
+    padding-left: 10px;
+}
+.accion{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.titulo-pagina{
+    color: white;
+}
+.flex{
+    
+    margin: 20px;
+    padding: 10px;
+}
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalle article{
+    margin: 15px;
+    width: 16%;
+}
+.detalle img{
+    width: 100%;
+}
+.detalle h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.detalle a{
+    display: inline-block;
+}
+.detalle h2{
+    width: 100%;
+}
+
+#generos{
+    list-style-type: none;
+
+}
+#generos li a{
+    text-decoration: none;
+    color: white;
+}
+
+#not-found{
+    color: white;
+}
+#bb{
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+}
+#fav{
+    display: flex;
+    flex-wrap: wrap;
+}
+#fav article{
+    background-color: rgb(22, 21, 21);
+}
+#fav h4{
+    text-align: center;
+}
+#especif{
+    list-style-type: none;
+}
+#listado-de-generos li a{
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+
+/*------- NO TOCAR --------*/
+
+@media (max-width:425px){ /* celular */
+
+header.padre-contenedor{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 150px;
+}
+.opciones{
+    padding: 0%;
+    flex-direction: row;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.opciones li i{
+    display: flex;
+}
+.opciones li{
+    display: none;
+}
+.home i{
+    display: inline-block;
+}
+.menu i{
+    display: inline-block;
+}
+.opciones input{
+    width: 90px;
+}
+.opciones form{
+    padding: 1%;
+}
+.boton-buscar{
+    display: none;
+}
+button.lupa{
+    display: inline-block;
+}
+.lupa i{
+    display: inline-block;
+}
+.fas{
+    width: 25px;
+}
+
+}
+.detalle a{
+    display: inline-block;
+    max-width: 30%;
+    
+}
+.detalle img{
+    width: 100px;
+    justify-content: space-between;
+}
+.detalle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalle article{
+    margin: 15px;
+    width: 16%;
+}
+.detalle img{
+    width: 100%;
+}
+.detalle h2{
+    width: 100%;
+}
+
+
