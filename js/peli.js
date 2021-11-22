@@ -21,7 +21,8 @@ window.onload= function (params) {
                  <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}"></img>
             </div>
             <h3>${datos.results[i].title}</h3>
-            <p>${datos.results[i].first_air_date}</p>
+            <p>${datos.results[i].release_date}</p>
+            <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
          </article>
             `
             
@@ -51,7 +52,8 @@ window.onload= function (params) {
                  <a href="./detalleP.html"><img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}"></img></a>
             </div>
             <h3>${datos.results[i].title}</h3>
-            <p>${datos.results[i].first_air_date}</p>
+            <p>${datos.results[i].release_date}</p>
+            <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
          </article>
             `
             
@@ -81,7 +83,8 @@ window.onload= function (params) {
                  <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}"></img>
             </div>
             <h3>${datos.results[i].title}</h3>
-            <p>${datos.results[i].first_air_date}</p>
+            <p>${datos.results[i].release_date}</p>
+            <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
          </article>
             `
             

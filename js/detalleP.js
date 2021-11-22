@@ -1,47 +1,93 @@
+console.log(location.search);
+
+let queryStringObj = new URLSearchParams(location.search);
+
+let id = queryStringObj.get("id");
+
+console.log(id);
 
 
-  console.log(location.search); 
+fetch("https://api.themoviedb.org/3/movie/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf")
 
-    let queryStringObj = new URLSearchParams(location.search);
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (datos) {
 
-    let id = queryStringObj.get("id");
+      console.log(datos);
 
-    console.log(id);
+      let info = datos.reuslts;
 
- 
-
-    const titulo = document.querySelector(".titulo");
-    const seccion = document.querySelector("#detallepeli")
-    const rating = document.querySelector(".rating");
-    const release = document.querySelector(".release");
-    const duracion = document.querySelector(".duracion");
-    const sinopsis = document.querySelector(".sinopsis");
-    const generos = document.querySelector(".generos")
-
-    fetch("https://api.themoviedb.org/3/movie/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data){
-      
-      console.log(data);
-
-      for(let i=0; i<= data.genres.length; i++){
-       generos.innerHTML += `<a href="./detalleG.html?id=${data.genres[i].id}"> ,${data.genres[i].name}</a>` 
+      for (let i = 0; i <= datos.genre_ids.length; i++) {
+        generos.innerHTML += `<a href="./detalleG.html?id=${data.genre_ids[i]}"> ,${data.genre_ids[i].name}</a>`
       }
 
-     titulo.innerText += "" + data.title;
-     seccion.innerHTML += `
-     <div> 
-     <img src="https://image.tmdb.org/t/p/w342/"${data.poster_path}>
-     </div>
-     `
-    rating.innerText += "" + data.vote_average
+      document.querySelector("#detallepeli").innerHTML += `
+    <article class=""detalle> 
+    <img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="${data.name}">
+  <h3>${data.name} </h3>
+    <ul>
+        <li>Rating: ${data.vote_average} </li>
+        <li>Fecha de estreno: ${data.release_date} </li>
+        <li>Duración: ${data.runtime} minutos</li>
+        <li>Sinopsis: ${data.overview}</li>
+        <li>Géneros: </li>
+    </ul> 
+    <button type="submit" class="fav">Agregar a favoritos</button>     
+   </article> 
+      `
+      const fav = document.querySelector(".fav");
 
-    })
-  
-    .catch(function(e){
-      console.log(e)
-      alert("Algo salio mal")
-    })
+      let favoritos = [];
+ 
+      let recuperoStorage = localStorage.getItem("favoritos");
+ 
+      if(recuperoStorage && recuperoStorage != null){ 
+        
+       favoritos = JSON.parse(recuperoStorage);
+ 
+      }
+ 
+      if(favoritos.includes(id)){
+        fav.innerHTML = `
+        Quitar de favoritos
+        `
+ 
+       fav.addEventListener("click",function(e){
+ 
+         e.preventDefault();
+ 
+         if(favoritos.includes(id)){
+ 
+           let aBorrar = favoritos.indexOf(id);
+ 
+           favoritos.splice(aBorrar, 1);
+ 
+           fav.innerHTML = `
+        Agregar a favoritos
+        `
+           
+         }
+         else{
+ 
+           favoritos.push(id);
+ 
+           fav.innerHTML = `
+        Quitar de favoritos
+        `
+ 
+         }
+ 
+         let favStorage = JSON.stringify(favoritos);
+ 
+         localStorage.setItem("favoritos", favStorage);
+ 
+ 
+       });
+ 
+      }
+  })
 
+  .catch(function (e) {
+    alert("Algo salio mal")
+  })

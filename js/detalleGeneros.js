@@ -1,6 +1,12 @@
-window.onload= function(){   
+console.log(location.search); 
 
-    let url1 = ( "https://api.themoviedb.org/3/discover/tv?api_key=aba8582172d8a3b18484779580d5c9bf" )
+let queryStringObj = new URLSearchParams(location.search);
+
+let id = queryStringObj.get("id");
+
+console.log(id); 
+
+    let url1 = ( "https://api.themoviedb.org/3/tv" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf" )
 
     fetch(url1)
         .then(function (respuesta) {
@@ -29,5 +35,4 @@ window.onload= function(){
       alert("Algo salio mal!");
         
     })
-    
-}
+        )

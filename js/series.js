@@ -23,6 +23,7 @@ window.onload= function (params) {
            </div>
            <h3>${datos.results[i].name}</h3>
            <p>${datos.results[i].first_air_date}</p>
+           <a href="./detalleSeries.html?id=${datos.results[i].id}"> Detalles </a>
         </article>
            `
            
@@ -55,6 +56,7 @@ window.onload= function (params) {
            </div>
            <h3>${datos.results[i].name}</h3>
            <p>${datos.results[i].first_air_date}</p>
+           <a href="./detalleSeries.html?id=${datos.results[i].id}"> Detalles </a>
         </article>
            `
            
@@ -88,6 +90,7 @@ window.onload= function (params) {
            </div>
            <h3>${datos.results[i].name}</h3>
            <p>${datos.results[i].first_air_date}</p>
+           <a href="./detalleSeries.html?id=${datos.results[i].id}"> Detalles </a>
         </article>
            `
            

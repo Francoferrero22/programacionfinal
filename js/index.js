@@ -23,7 +23,7 @@ fetch(url1)
         </div>
        <h3>${datos.results[i].name}</h3>
        <p>${datos.results[i].first_air_date}</p>
-       <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
+       <a href="./detalleSeries.html?id=${datos.results[i].id}"> Detalles </a>
     </article>
        `
        
@@ -56,6 +56,7 @@ fetch(url2)
         </div>
         <h3>${datos.results[i].title}</h3>
         <p>${datos.results[i].first_air_date}</p>
+        <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
      </article>
         `
         
