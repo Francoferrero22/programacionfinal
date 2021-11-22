@@ -58,7 +58,7 @@ ul.opciones{
  
 
 }
-.opciones a{
+a{
     text-decoration: none;
     color: white;
 }
@@ -158,11 +158,11 @@ a .movi{
     width: 100%;
 }
 
-#generos{
+#genero li{
     list-style-type: none;
 
 }
-#generos li a{
+#genero li a{
     text-decoration: none;
     color: white;
 }
@@ -237,8 +237,13 @@ button.lupa{
 .fas{
     width: 25px;
 }
-
+#seriesP article{
+    width: max-content;
 }
+#seriesP li a{
+    display: inline-block;
+}
+
 .detalle a{
     display: inline-block;
     max-width: 30%;
@@ -261,6 +266,7 @@ button.lupa{
 }
 .detalle h2{
     width: 100%;
+}
 .generos{
     margin: 15px;
 }

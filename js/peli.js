@@ -48,7 +48,7 @@ window.onload= function (params) {
             
          <article>
             <div class="foto"> 
-                 <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}"></img>
+                 <a href="./detalleP.html"><img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}"></img></a>
             </div>
             <h3>${datos.results[i].title}</h3>
             <p>${datos.results[i].first_air_date}</p>

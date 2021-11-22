@@ -19,10 +19,11 @@ fetch(url1)
        
     <article>
        <div class="foto"> 
-            <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].name}"></img>
-       </div>
+       <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].name}">
+        </div>
        <h3>${datos.results[i].name}</h3>
        <p>${datos.results[i].first_air_date}</p>
+       <a href="./detalleP.html?id=${datos.results[i].id}"> Detalles </a>
     </article>
        `
        
