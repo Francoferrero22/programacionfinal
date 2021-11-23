@@ -1,7 +1,5 @@
 let queryStringObj = new URLSearchParams(location.search);
-
 let id = queryStringObj.get("id");
-
 let peliurl = ("https://api.themoviedb.org/3/movie/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf");
 
 fetch(peliurl)
@@ -15,7 +13,8 @@ fetch(peliurl)
     document.querySelector("#detallepeli").innerHTML += `
   <article class="detalle"> 
   <img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="${data.name}" class="foto-detalle">
-<h3>${data.title} </h3>
+
+<h2>${data.title}</h2>
   <ul>
       <li>Rating: ${data.vote_average} </li>
       <li>Fecha de estreno: ${data.first_air_date} </li>
@@ -48,8 +47,8 @@ fetch(peliurl)
 
         if (favoritosP.includes(id)) {
 
-          let aBorrar = favoritosP.indexOf(id);
-          favoritosP.splice(aBorrar, 1);
+          let borrar = favoritosP.indexOf(id);
+          favoritosP.splice(borrar, 1);
           fav.innerHTML = `
           
       <h3><a id="fav"> Agregar a favoritos </a></h3>   `

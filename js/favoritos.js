@@ -22,9 +22,7 @@ if (favoritosP.length == 0) {
     for (let i = 0; i < favoritosP.length; i++) {
         const id = favoritosP[i];
 
-        let urlP = ("https://api.themoviedb.org/3/movie/" + id + "?api_key=af93cf6a36d0e3597028097290f9535d")
-
-        fetch(urlP)
+        fetch("https://api.themoviedb.org/3/movie/" + id + "?api_key=af93cf6a36d0e3597028097290f9535d")
 
             .then(function (respuesta) {
 
@@ -39,7 +37,7 @@ if (favoritosP.length == 0) {
     
             <article>
                 <div class="fotos">
-                    <a href="./detalleP.html?id=${data.id}">
+                    <a href="./detalleP.html?id=${datos.id}">
                     <img src="https://image.tmdb.org/t/p/w342/${datos.poster_path}" alt="${datos.title}"></img> 
                     </a>
                 </div>

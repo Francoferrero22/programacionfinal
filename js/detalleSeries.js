@@ -1,8 +1,6 @@
-    let queryStringObj = new URLSearchParams(location.search);
-
-    let id = queryStringObj.get("id");
-
-    let serieurl = ("https://api.themoviedb.org/3/tv/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf");
+let queryStringObj = new URLSearchParams(location.search);
+let id = queryStringObj.get("id");
+let serieurl = ("https://api.themoviedb.org/3/tv/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf");
 
     fetch(serieurl)
       .then(function (response) {

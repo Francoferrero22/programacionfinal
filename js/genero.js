@@ -41,4 +41,8 @@ fetch(urlP)
   </li>`
   }  
 })
+.catch(function(error){
+  console.log(error);
+  alert("Ocurrió un error.");
+})
 
