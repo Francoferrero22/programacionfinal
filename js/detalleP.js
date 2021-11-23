@@ -2,19 +2,19 @@ let queryStringObj = new URLSearchParams(location.search);
 
 let id = queryStringObj.get("id");
 
-let peliurl = ("https://api.themoviedb.org/3/movie/" +id + "?api_key=aba8582172d8a3b18484779580d5c9bf");
+let peliurl = ("https://api.themoviedb.org/3/movie/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf");
 
 fetch(peliurl)
-.then(function(response) {
-  return response.json();
-})
-.then(function(data){
-  console.log(data);
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
 
-  
-  document.querySelector("#detallepeli").innerHTML +=`
-  <article class=""detalle> 
-  <img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="${data.name}">
+
+    document.querySelector("#detallepeli").innerHTML += `
+  <article class="detalle"> 
+  <img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="${data.name}" class="foto-detalle">
 <h3>${data.title} </h3>
   <ul>
       <li>Rating: ${data.vote_average} </li>
@@ -23,66 +23,57 @@ fetch(peliurl)
       <li>Sinopsis: ${data.overview}</li>
       <li>Géneros: </li>
   </ul>     
-  <button type="submit" class="fav">Agregar a favoritos</button> 
+  <h3><a id="fav"> Agregar a favoritos </a> </h3> 
  </article> `
 
- const fav = document.querySelector(".fav");
+    const fav = document.querySelector("#fav");
+    let favoritosP = [];
+    let recuperoStorage = localStorage.getItem("favoritosP");
 
- let favoritos = [];
+    if (recuperoStorage && recuperoStorage != null) {
 
- let recuperoStorage = localStorage.getItem("favoritos");
-
- if(recuperoStorage && recuperoStorage != null){ 
-   
-  favoritos = JSON.parse(recuperoStorage);
-
- }
-
- if(favoritos.includes(id)){
-   fav.innerHTML = `
-   Quitar de favoritos
-   `
-
-  fav.addEventListener("click",function(e){
-
-    e.preventDefault();
-
-    if(favoritos.includes(id)){
-
-      let aBorrar = favoritos.indexOf(id);
-
-      favoritos.splice(aBorrar, 1);
-
-      fav.innerHTML = `
-   Agregar a favoritos
-   `
-      
-    }
-    else{
-
-      favoritos.push(id);
-
-      fav.innerHTML = `
-   Quitar de favoritos
-   `
+      favoritosP = JSON.parse(recuperoStorage);
 
     }
-
-    let favStorage = JSON.stringify(favoritos);
-
-    localStorage.setItem("favoritos", favStorage);
+    console.log(favoritosP);
 
 
-  });
+    if (favoritosP.includes(id)) {
+      fav.innerHTML = `
+   <h3><a id="fav"> Quitar de favoritos </a></h3>   `
 
- }
+      fav.addEventListener("click", function (e) {
 
-})
+        e.preventDefault();
+
+        if (favoritosP.includes(id)) {
+
+          let aBorrar = favoritosP.indexOf(id);
+          favoritosP.splice(aBorrar, 1);
+          fav.innerHTML = `
+          
+      <h3><a id="fav"> Agregar a favoritos </a></h3>   `
+
+        } else {
+
+          favoritosP.push(id);
+          fav.innerHTML = `
+      <h3><a id="fav"> Quitar de favoritos </a></h3>   `
+
+        }
+
+        let favStorageP = JSON.stringify(favoritosP);
+        localStorage.setItem("favoritos", favStorageP);
 
 
-.catch(function(e){
-  console.log(e)
-  alert("Algo salio mal")
-})
+      });
+
+    }
+
+  })
 
 
+  .catch(function (e) {
+    console.log(e)
+    alert("Algo salio mal")
+  })

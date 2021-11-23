@@ -276,6 +276,11 @@ button.lupa{
 .generos{
     margin: 15px;
 }
-
-
-
+.foto{
+    display: inline-block;
+}
+#fav{
+    background-color: rgb(138, 16, 16);
+    color: white;
+    border: 2px;
+}
