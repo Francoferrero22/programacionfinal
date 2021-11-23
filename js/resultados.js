@@ -1,11 +1,11 @@
-
+window.onload= function (params) {
 let querystring = location.search 
 let querystringobj = new URLSearchParams(querystring); 
 let busqueda = querystringobj.get("search"); 
 
 
 
-fetch(`https://api.themoviedb.org/3/search/movie?api_key=af93cf6a36d0e3597028097290f9535d&language=en-US&query=${busqueda}&page=1&include_adult=false`) //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
+fetch(`https://api.themoviedb.org/3/search/movie?api_key=af93cf6a36d0e3597028097290f9535d&language=en-US&query=${busqueda}&page=1&include_adult=false`)
 
     .then(function (response) {
         return response.json();
@@ -24,7 +24,10 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=af93cf6a36d0e3597028097
 </article>`
  } 
  })
-    fetch(`https://api.themoviedb.org/3/search/tv?api_key=af93cf6a36d0e3597028097290f9535d&language=en-US&query=${busqueda}&page=1&include_adult=false`) //Cuando llamo a busqueda le agrego a la url del endpoint especifico lo que atrape
+ .catch (e)
+ alert("algo saio mal");
+
+    fetch(`https://api.themoviedb.org/3/search/tv?api_key=af93cf6a36d0e3597028097290f9535d&language=en-US&query=${busqueda}&page=1&include_adult=false`) 
 
     .then(function (response) {
         return response.json();
@@ -44,3 +47,6 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=af93cf6a36d0e3597028097
             
         }
    })
+   .catch(e)
+   alert("Algo salio mal")
+}

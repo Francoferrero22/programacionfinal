@@ -136,16 +136,16 @@ a .movi{
     margin: 20px;
     padding: 10px;
 }
-.detalle{
+ .detalle{
     display: flex;
     flex-wrap: wrap;
 }
 .detalle article{
     margin: 15px;
     width: 16%;
-}
+} 
 .detalle img{
-    width: 100%;
+    width: 50%;
 }
 .detalle h4{
     text-align: center;
@@ -251,7 +251,7 @@ button.lupa{
     
 }
 .detalle img{
-    width: 100px;
+    width: 80px;
     justify-content: space-between;
 }
 .detalle{
@@ -263,7 +263,7 @@ button.lupa{
     width: 16%;
 }
 .detalle img{
-    width: 100%;
+    width: 50%;
 }
 .detalle h2{
     width: 100%;

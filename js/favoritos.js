@@ -22,7 +22,7 @@ if (favoritosP.length == 0) {
     for (let i = 0; i < favoritosP.length; i++) {
         const id = favoritosP[i];
 
-        let urlP = ("https://api.themoviedb.org/3/movie/" + id + "?api_key=aba8582172d8a3b18484779580d5c9bf")
+        let urlP = ("https://api.themoviedb.org/3/movie/" + id + "?api_key=af93cf6a36d0e3597028097290f9535d")
 
         fetch(urlP)
 
@@ -44,7 +44,7 @@ if (favoritosP.length == 0) {
                     </a>
                 </div>
     
-                <h3>${datos.title.id}</h3>
+                <h3>${datos.original_name}</h3>
     
                 <p>${datos.release_date.id}</p>
             
@@ -85,7 +85,7 @@ const seccionS = document.querySelector("#seccionFavS");
 
 if (favoritosS.length == 0) {
     seccionS.innerHTML += `
-        <h2> ¡Lo sentimos! Aún no has añadido ninguna película a Favoritos. </h2>
+        <h2> ¡Lo sentimos! Aún no has añadido ninguna serie a Favoritos. </h2>
     `
 } else {
     for (let i = 0; i < favoritosS.length; i++) {

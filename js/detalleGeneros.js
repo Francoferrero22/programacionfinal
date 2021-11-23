@@ -4,8 +4,14 @@
     
     let id = queryStringObj.get("id");
     
-    
-        let url1 = ( "https://api.themoviedb.org/3/discover/movie?api_key=aba8582172d8a3b18484779580d5c9bf&with_genres=${idGp")
+    fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=af93cf6a36d0e3597028097290f9535d")
+        .then (function (response) {
+            return response .json();
+            
+        })
+        .then (function (data) {
+            
+        let url1 = ("https://api.themoviedb.org/3/discover/movie?api_key=7a176cc95147be6e695be2faf0e8ff9c&with_genres=${idGp")
     
         fetch(url1)
             .then(function (respuesta) {
@@ -24,8 +30,8 @@
             <article> <a href="detalle.html?id= ${data.results.id}"> 
             <img src="https://image.tmdb.org/t/p/w342/${data.results.poster_path}">
             <h3> ${data.results.name}</h3>
-            </article>`
-                }
+            </article>` }
+            )}
         
             )
 
